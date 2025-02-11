@@ -14,4 +14,11 @@ public class Rook extends ChessPiece {
 	public String toString() {
 		return "R";
 	}
+	
+	// Implementação temporária pra rei e torre, aqui é como se a peça não pudesse movimentar pra nenhum lugar
+	@Override
+	public boolean[][] possibleMoves() {
+		boolean[][] mat = new boolean[getBoard().getRows()][getBoard().getRows()];
+		return mat;
+	}
 }
